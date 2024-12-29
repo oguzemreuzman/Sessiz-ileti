@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".second"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yeni Hesap"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="italic|bold"
+        android:text="Oluşturun"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"></TextView>
+    <TextView
+        android:id="@+id/kul_adi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kullanıcı Adı"
+        android:textSize="20sp"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="50dp"></TextView>
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kul_adi2"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="50dp"></EditText>
+    <TextView
+        android:id="@+id/e_posta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-POSTA ADRESI"
+        android:textSize="20sp"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="50dp"></TextView>
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e_posta"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="50dp"
+        ></EditText>
+    <TextView
+        android:id="@+id/şifre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ŞIFRE"
+        android:textSize="20sp"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="50dp"></TextView>
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/şifre2"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginLeft="50dp"
+        ></EditText>
+    <Button
+        android:id="@+id/Move2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:text="Kayıt ol"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350sp"></Button>
+</RelativeLayout>

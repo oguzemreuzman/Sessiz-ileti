@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yapın"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="150dp"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:id="@+id/textView1"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Devam etmek için giriş yapın!"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="110dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kul_adi"
+        android:text="KULALNICI ADI VEYA E-POSTA ADRESİ"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="230dp">
+    </TextView>
+    <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="248dp"
+            android:layout_height="wrap_content"
+            android:hint="Kullanıcı adı"
+            android:id="@+id/edtText"
+            android:textColor="@color/white"
+            android:layout_below="@+id/kul_adi"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/rounded_corner">
+    </EditText>
+    <TextView
+        android:id="@+id/sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ŞİFRE"
+        android:layout_below="@id/edtText"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="77dp">
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtText2"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sifre"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        app:passwordToggleEnabled="true"></EditText>
+    <Button
+        android:id="@+id/Move1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giriş Yap"
+        android:layout_below="@+id/textView1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="175sp"
+        ></Button>
+    <TextView
+        android:text="Şifrenizi mi unuttunuz?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Move1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"></TextView>
+    <TextView
+        android:id="@+id/Move2"
+        android:text="Hesabınız yoksa kayıt olun!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Move1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"></TextView>
+
+</RelativeLayout>

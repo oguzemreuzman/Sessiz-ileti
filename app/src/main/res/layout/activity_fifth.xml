@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".fifth">
+
+    <TextView
+        android:id="@+id/isaretdili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="İşaret Dili"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_marginTop="50dp"></TextView>
+    <TextView
+        android:id="@+id/isaretdilialt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tekrar çevirmek isterseniz tekrar tuşuna basın."
+        android:layout_below="@+id/isaretdili"
+        android:layout_centerHorizontal="true"
+        android:textSize="17dp"></TextView>
+    <FrameLayout
+        android:id="@+id/sign_language_container"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:layout_below="@id/isaretdilialt"
+        android:layout_weight="1"
+        android:background="@drawable/backg"
+        android:elevation="2dp"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <!-- Döndürülen metin burada gösterilecek -->
+        <TextView
+            android:id="@+id/translated_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dönüştürülmüş metin burada görünecek"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+    </FrameLayout>
+    <ImageButton
+        android:id="@+id/resetbutton"
+        android:background="@drawable/resetbutton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/sign_language_container"
+        ></ImageButton>
+    <ImageButton
+        android:id="@+id/tickbutton"
+        android:background="@drawable/tick"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_below="@id/sign_language_container"
+        android:layout_marginLeft="329dp"
+        ></ImageButton>
+</RelativeLayout>

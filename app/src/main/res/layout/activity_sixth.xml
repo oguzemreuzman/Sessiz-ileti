@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sixth"
+    android:background="@drawable/backg">
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:id="@+id/yazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yazı"
+        ></TextView>
+    <TextView
+        android:text="Çevirmek istediğiniz metni yazın, taratın
+veya dosya yükleyin"
+        android:id="@+id/yazi2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yazi"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"></TextView>
+
+
+    <FrameLayout
+        android:id="@+id/sign_language_container"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:layout_below="@id/yazi2"
+        android:layout_weight="1"
+        android:background="@drawable/backg"
+        android:elevation="2dp"
+        android:layout_margin="8dp"
+        android:padding="8dp">
+
+        <!-- Döndürülen metin burada gösterilecek -->
+        <EditText
+            android:id="@+id/translated_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+    </FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_language_container"
+        android:id="@+id/getTextFrom"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_language_container"
+        android:layout_marginLeft="300dp"
+        android:id="@+id/scan"></Button>
+
+</RelativeLayout>
